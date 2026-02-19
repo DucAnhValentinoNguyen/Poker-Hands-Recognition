@@ -1,0 +1,14 @@
+# Ignore python virtual environments
+venv/
+env/
+.env/
+
+# Ignore heavy datasets
+datasets/
+*.zip
+*.tar.gz
+
+# Ignore training logs and weights
+runs/
+*.pt
+*.onnx
