@@ -41,6 +41,13 @@ results*.csv
 coco/
 coco128/
 VOC/
+# Ignore the dataset (it's already on Roboflow)
+Playing-Cards-*/
+datasets/
+
+# Keep the models folder but ignore large unused weights
+models/*.pt
+!models/best.pt
 
 # MATLAB GitIgnore -----------------------------------------------------------------------------------------------------
 *.m~
@@ -70,6 +77,8 @@ yolov3-tiny.conv.15
 __pycache__/
 *.py[cod]
 *$py.class
+# Ignore Python cache
+.ipynb_checkpoints/
 
 # C extensions
 *.so
